@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'tasks', to:'tasks#index', as: 'tasks'
+  get 'home', to:'home#index', as: 'home'
+
   resources :users
   resources :tasks
 
